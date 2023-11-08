@@ -5,7 +5,9 @@ const desserts = [
     soldout: true,
   },
   {
-
+    name: "Chocolate Chip",
+    category:"cake",
+    soldout: true,
   },
 
 ]
