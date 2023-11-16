@@ -4,15 +4,19 @@ const desserts = [
        class: "cake",
     },
     {
-        name: "",
+        name: "Chocolate",
         class: "cake",
     },
     {
-        name: "",
+        name: "Vanilla",
         class: "cake",
     },
     {
-        name: "",
+        name: "Tiramisu",
+        class: "cake",
+    },
+    {
+        name: "Cheesecake",
         class: "cake",
     },
     {
@@ -20,7 +24,39 @@ const desserts = [
         class: "cookie",
     },
     {
+        name: "Snickerdoodles",
+        class: "cookie",
+    },
+    {
+        name: "Oatmeal Raisin",
+        class: "cookie",
+    },
+    {
+        name: "Macaron",
+        class: "cookie",
+    },
+    {
+        name: "",
+        class: "cookie",
+    },
+    {
         name: "Mint Chocolate",
+        class: "ice cream",
+    },
+    {
+        name: "",
+        class: "ice cream",
+    },
+    {
+        name: "",
+        class: "ice cream",
+    },
+    {
+        name: "",
+        class: "ice cream",
+    },
+    {
+        name: "",
         class: "ice cream",
     },
     {
@@ -28,11 +64,19 @@ const desserts = [
         class: "drink",
     },
     {
-        name: "Classic Beignet",
-        class: "pastry",
+        name: "",
+        class: "drink",
     },
     {
         name: "",
-        class: "pastry",
+        class: "drink",
+    },
+    {
+        name: "",
+        class: "drink",
+    },
+    {
+        name: "",
+        class: "drink",
     },
 ]
