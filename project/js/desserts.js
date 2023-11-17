@@ -36,7 +36,7 @@ const desserts = [
         class: "cookie",
     },
     {
-        name: "",
+        name: "Lemon Blueberry",
         class: "cookie",
     },
     {
@@ -44,19 +44,19 @@ const desserts = [
         class: "ice cream",
     },
     {
-        name: "",
+        name: "Strawberry",
         class: "ice cream",
     },
     {
-        name: "",
+        name: "Butter Pecan",
         class: "ice cream",
     },
     {
-        name: "",
+        name: "Cookie Dough",
         class: "ice cream",
     },
     {
-        name: "",
+        name: "Vanilla",
         class: "ice cream",
     },
     {
@@ -64,19 +64,21 @@ const desserts = [
         class: "drink",
     },
     {
-        name: "",
+        name: "Iced Americano",
         class: "drink",
     },
     {
-        name: "",
+        name: "Honey Oolong",
         class: "drink",
     },
     {
-        name: "",
+        name: "Mango Slush",
         class: "drink",
     },
     {
-        name: "",
+        name: "Hot Chocolate",
         class: "drink",
     },
 ]
+
+  
