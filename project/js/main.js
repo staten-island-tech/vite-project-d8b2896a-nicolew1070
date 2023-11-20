@@ -1,2 +1,6 @@
 import "../css/style.css";
-import {desserts} from "../js/desserts";
+import "../js/desserts.js";
+
+function card (dessert) {
+    document.querySelector("")
+}
