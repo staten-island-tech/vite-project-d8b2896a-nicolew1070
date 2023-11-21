@@ -1,4 +1,4 @@
-body,
+/* body,
 html,
 * {
     font-size: 10px;
@@ -66,4 +66,28 @@ a {
     margin: 5rem 40rem;
     border-radius: 1rem;
     box-shadow: 1rem 1rem 0.5rem #40916c;
+} */
+
+:root {
+    --blue: #2998ff;
+    --lightblue: #8eb3d6;
+    --anotherblue: #5d9cd6;
+    --green: #40ffef;
+    
+    --primary: var(--anotherblue);
+    --secondary: var(--green);
+}
+  
+body {
+    background-color: var(--primary);
+}
+  
+.light{
+    --primary: var(--lightblue);
+    --secondary: var(--blue);
+}
+  
+.dark{
+    --primary: var(var(--primary))
+    --secodary: var(var(--secondary))
 }
