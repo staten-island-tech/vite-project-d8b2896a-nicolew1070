@@ -2,18 +2,7 @@ import "../css/style.css";
 import "../js/desserts.js";
 import "../js/dom.js";
 
-document.querySelector(".change-theme").addEventListener("click", function () {
-    if(document.body.classList.contains("light")) {
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
-    } else {
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-    }
-}
-);
-
-function card () {
+function x () {
  desserts.forEach((desserts)=> DOMSelectors.display.insertAdjacentHTML(
         "beforeend",
         `<div class="display-card"> 
@@ -22,3 +11,14 @@ function card () {
         <img class="display-img" src="${desserts.img.value}" alt="">`)
         );
 }
+
+document.querySelector(".change-theme").addEventListener("click", function () {
+    if(document.body.classList.contains("freshy")) {
+        document.body.classList.add("minty");
+        document.body.classList.remove("freshy");
+    } else {
+        document.body.classList.add("freshy");
+        document.body.classList.remove("minty");
+    }
+}
+);

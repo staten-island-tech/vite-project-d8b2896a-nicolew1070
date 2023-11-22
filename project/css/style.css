@@ -67,27 +67,43 @@ a {
     border-radius: 1rem;
     box-shadow: 1rem 1rem 0.5rem #40916c;
 } */
-
-:root {
-    --blue: #2998ff;
-    --lightblue: #8eb3d6;
-    --anotherblue: #5d9cd6;
-    --green: #40ffef;
-    
-    --primary: var(--anotherblue);
-    --secondary: var(--green);
-}
-  
 body {
     background-color: var(--primary);
 }
-  
-.light{
+
+#heading {
+    background-color: var(--secondary);
+    font-size: 6rem;
+    margin: 5rem 40rem;
+    border-radius: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+:root {
+    --blue:#62c1e5;
+    --lightblue: #a0d9ef;
+    --anotherblue: #20a7db;
+    --darkblue: #1c96c5;
+    --mint: #b9d5bc;
+    --darkgreen: #5a855f;
+
+    --primary: var(--lightblue);
+    --secondary: var(--blue);
+}
+
+.freshy{
     --primary: var(--lightblue);
     --secondary: var(--blue);
 }
   
-.dark{
-    --primary: var(var(--primary))
-    --secodary: var(var(--secondary))
+.minty{
+    --primary:  var(--mint);
+    --secondary: var(--darkgreen);
 }
+
