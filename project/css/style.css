@@ -74,7 +74,7 @@ body {
 #heading {
     background-color: var(--secondary);
     font-size: 6rem;
-    margin: 5rem 40rem;
+    margin: 5rem 35rem;
     border-radius: 1rem;
 }
 
@@ -92,9 +92,6 @@ body {
     --darkblue: #1c96c5;
     --mint: #b9d5bc;
     --darkgreen: #5a855f;
-
-    --primary: var(--lightblue);
-    --secondary: var(--blue);
 }
 
 .freshy{
@@ -106,4 +103,6 @@ body {
     --primary:  var(--mint);
     --secondary: var(--darkgreen);
 }
+
+
 

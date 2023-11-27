@@ -1,8 +1,10 @@
 const DOMSelectors = {
-    dessert: document.querySelector(".food"),
-    drinks: document.querySelector(".drink"),
-    instock: document.querySelector(".available"),
-    img: document.querySelector(".display-img"),
-    display: document.querySelector(".display"),
-    all: document.querySelector(".menu"),
+    cake: document.querySelector("#cakes"),
+    cookie: document.querySelector("#cookies"),
+    icecream: document.querySelector("#icecream"),
+    drink: document.querySelector("#drinks"),
+    all: document.querySelector("#menu"),
+    card: document.querySelector(".display"),
 };
+
+export {DOMSelectors};
