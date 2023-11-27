@@ -2,7 +2,7 @@ import "../css/style.css";
 import { DOMSelectors } from "./dom.js";
 import { desserts } from "./desserts.js";
 
-document.querySelector("#change-theme").addEventListener("click", function () {
+ document.querySelector("#change-theme").addEventListener("click", function () {
   if (document.body.classList.contains("freshy")) {
     document.body.classList.add("minty");
     document.body.classList.remove("freshy");
@@ -76,7 +76,7 @@ drink.forEach((item) =>
 );
 }
 
-function remove () {
+function clearfields () {
     all.forEach((item)=> item.remove());
     cake.forEach((item)=> item.remove());
     cookie.forEach((item)=> item.remove());
@@ -86,27 +86,27 @@ function remove () {
 
 DOMSelectors.all.addEventListener("click", function (){
 all ();
-remove ();
+clearfields ();
 });
 
 DOMSelectors.cake.addEventListener("click", function () {
 cake ();
-remove ();
+clearfields ();
 });
 
 DOMSelectors.cookie.addEventListener("click", function () {
 cookie ();
-remove ();
+clearfields ();
 });
 
 DOMSelectors.icecream.addEventListener("click", function () {
 icecream ();
-remove ();
+clearfields ();
 });
 
 DOMSelectors.drink.addEventListener("click", function () {
 drink ();
-remove ();
+clearfields ();
 });
 
 //fix the remove so that it works
