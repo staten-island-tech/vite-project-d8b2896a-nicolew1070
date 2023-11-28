@@ -17,7 +17,7 @@ function all () {
     DOMSelectors.card.insertAdjacentHTML(
       "beforeend",
       `<div class="display-card"> 
-    <h2>${item.name}</h2> 
+    <h2 class="title">${item.name}</h2> 
     <img class="display-img" src="${item.img}" alt="">
     <h3>${item.price}</h3>
     <h3>${item.calories}</h3>`
@@ -31,7 +31,7 @@ function cakes () {
     DOMSelectors.card.insertAdjacentHTML(
       "beforeend",
       `<div class="display-card"> 
-    <h2>${item.name}</h2> 
+    <h2 class="title">${item.name}</h2> 
     <img class="display-img" src="${item.img}" alt="">
     <h3>${item.price}</h3>
     <h3>${item.calories}</h3>`
@@ -45,7 +45,7 @@ cookie.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
     `<div class="display-card"> 
-  <h2>${item.name}</h2> 
+  <h2 class="title">${item.name}</h2> 
   <img class="display-img" src="${item.img}" alt="">
   <h3>${item.price}</h3>
     <h3>${item.calories}</h3>`
@@ -59,7 +59,7 @@ icecream.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
     `<div class="display-card"> 
-  <h2>${item.name}</h2> 
+  <h2 class="title">${item.name}</h2> 
   <img class="display-img" src="${item.img}" alt="">
   <h3>${item.price}</h3>
     <h3>${item.calories}</h3>`
@@ -73,7 +73,7 @@ drink.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
     `<div class="display-card"> 
-  <h2>${item.name}</h2> 
+  <h2 class="title">${item.name}</h2> 
   <img class="display-img" src="${item.img}" alt="">
   <h3>${item.price}</h3>
     <h3>${item.calories}</h3>`
