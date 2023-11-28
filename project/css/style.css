@@ -131,6 +131,8 @@ h2 {
     --darkblue: #1c96c5;
     --mint: #b9d5bc;
     --darkgreen: #5a855f;
+    --primary:  var(--mint);
+    --secondary: var(--darkgreen);
 }
 
 .freshy{
