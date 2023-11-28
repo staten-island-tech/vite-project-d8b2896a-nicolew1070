@@ -18,96 +18,92 @@ function all () {
       "beforeend",
       `<div class="display-card"> 
     <h2>${item.name}</h2> 
-    <h3>${item.class}</h3>  
-    <img class="display-img" src="${item.img}" alt="">`
+    <img class="display-img" src="${item.img}" alt="">
+    <h3>${item.price}</h3>
+    <h3>${item.calories}</h3>`
     )
   );
 }
 
-function cake () {
+function cakes () {
   const cake = desserts.filter((item) => item.class.includes("Cake"));
   cake.forEach((item) =>
     DOMSelectors.card.insertAdjacentHTML(
       "beforeend",
       `<div class="display-card"> 
-            <h2>${item.name}</h2> 
-            <h3>${item.class}</h3>  
-            <img class="display-img" src="${item.img}" alt="">`
+    <h2>${item.name}</h2> 
+    <img class="display-img" src="${item.img}" alt="">
+    <h3>${item.price}</h3>
+    <h3>${item.calories}</h3>`
     )
   );
 }
 
-function cookie () {
+function cookies () {
 const cookie = desserts.filter((item) => item.class.includes("Cookie"));
 cookie.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
     `<div class="display-card"> 
-            <h2>${item.name}</h2> 
-            <h3>${item.class}</h3>  
-            <img class="display-img" src="${item.img}" alt="">`
+  <h2>${item.name}</h2> 
+  <img class="display-img" src="${item.img}" alt="">
+  <h3>${item.price}</h3>
+    <h3>${item.calories}</h3>`
   )
 );
   }
 
-function icecream () {
+function icecreams () {
 const icecream = desserts.filter((item) => item.class.includes("Ice Cream"));
 icecream.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
     `<div class="display-card"> 
-            <h2>${item.name}</h2> 
-            <h3>${item.class}</h3>  
-            <img class="display-img" src="${item.img}" alt="">`
+  <h2>${item.name}</h2> 
+  <img class="display-img" src="${item.img}" alt="">
+  <h3>${item.price}</h3>
+    <h3>${item.calories}</h3>`
   )
 );
   }
 
-function drink () {
+function drinks () {
 const drink = desserts.filter((item) => item.class.includes("Drink"));
 drink.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
     `<div class="display-card"> 
-            <h2>${item.name}</h2> 
-            <h3>${item.class}</h3>  
-            <img class="display-img" src="${item.img}" alt="">`
+  <h2>${item.name}</h2> 
+  <img class="display-img" src="${item.img}" alt="">
+  <h3>${item.price}</h3>
+    <h3>${item.calories}</h3>`
   )
 );
 }
 
-function clearfields () {
-    all.forEach((item)=> item.remove());
-    cake.forEach((item)=> item.remove());
-    cookie.forEach((item)=> item.remove());
-    icecream.forEach((item)=> item.remove());
-    drink.forEach((item)=> item.remove());
-}
-
 DOMSelectors.all.addEventListener("click", function (){
+DOMSelectors.card.innerHTML = '';
 all ();
-clearfields ();
 });
 
 DOMSelectors.cake.addEventListener("click", function () {
-cake ();
-clearfields ();
+DOMSelectors.card.innerHTML = '';
+cakes ();
 });
 
 DOMSelectors.cookie.addEventListener("click", function () {
-cookie ();
-clearfields ();
+DOMSelectors.card.innerHTML = '';
+cookies ();
 });
 
 DOMSelectors.icecream.addEventListener("click", function () {
-icecream ();
-clearfields ();
+DOMSelectors.card.innerHTML = '';
+icecreams ();
 });
 
 DOMSelectors.drink.addEventListener("click", function () {
-drink ();
-clearfields ();
+DOMSelectors.card.innerHTML = '';
+drinks ();
 });
 
-//fix the remove so that it works
-//work on css for the cards 
+all (); 
