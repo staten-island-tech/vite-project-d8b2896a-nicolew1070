@@ -115,17 +115,6 @@ h3 {
     transition-duration: 1.3s; */
 }
 
-/* #change-theme {
-    background-color: var(--tertiary);
-    border-radius: 3px;
-    padding: 0.5rem;
-    border: solid var(--quaternary);
-    color: var(--primary);
-    font-size: 1.2rem;
-    margin: 1rem;
-    font-family: 'Hind', sans-serif;
-} */
-
 :root {
     --blue:#62c1e5;
     --lightblue: #a0d9ef;
