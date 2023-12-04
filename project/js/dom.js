@@ -4,7 +4,7 @@ const DOMSelectors = {
     icecream: document.querySelector("#icecream"),
     drink: document.querySelector("#drinks"),
     all: document.querySelector("#menu"),
-    card: document.querySelector(".display"),
+    display: document.querySelector(".display"),
 };
 
 export {DOMSelectors};
