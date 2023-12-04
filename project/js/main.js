@@ -15,7 +15,7 @@ document.querySelector("#change-theme").addEventListener("click", function () {
 function all (arr) {
   arr.forEach((item) => DOMSelectors.card.insertAdjacentHTML(
       "beforeend",
-      `<div class="display-card"> 
+      `<div class="card"> 
     <h2 class="title">${item.name}</h2> 
     <img class="display-img" src="${item.img}" alt="">
     <h3>${item.price}</h3>
@@ -48,7 +48,7 @@ function all () {
   desserts.forEach((item) =>
     DOMSelectors.card.insertAdjacentHTML(
       "beforeend",
-      `<div class="display-card"> 
+      `<div class="card"> 
     <h2 class="title">${item.name}</h2> 
     <img class="display-img" src="${item.img}" alt="">
     <h3>${item.price}</h3>
@@ -62,7 +62,7 @@ function cakes () {
   cake.forEach((item) =>
     DOMSelectors.card.insertAdjacentHTML(
       "beforeend",
-      `<div class="display-card"> 
+      `<div class="card"> 
     <h2 class="title">${item.name}</h2> 
     <img class="display-img" src="${item.img}" alt="">
     <h3>${item.price}</h3>
@@ -76,7 +76,7 @@ const cookie = desserts.filter((item) => item.class.includes("Cookie"));
 cookie.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
-    `<div class="display-card"> 
+    `<div class="card"> 
   <h2 class="title">${item.name}</h2> 
   <img class="display-img" src="${item.img}" alt="">
   <h3>${item.price}</h3>
@@ -90,7 +90,7 @@ const icecream = desserts.filter((item) => item.class.includes("Ice Cream"));
 icecream.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
-    `<div class="display-card"> 
+    `<div class="card"> 
   <h2 class="title">${item.name}</h2> 
   <img class="display-img" src="${item.img}" alt="">
   <h3>${item.price}</h3>
@@ -104,7 +104,7 @@ const drink = desserts.filter((item) => item.class.includes("Drink"));
 drink.forEach((item) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
-    `<div class="display-card"> 
+    `<div class="card"> 
   <h2 class="title">${item.name}</h2> 
   <img class="display-img" src="${item.img}" alt="">
   <h3>${item.price}</h3>
