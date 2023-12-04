@@ -13,7 +13,7 @@ document.querySelector("#change-theme").addEventListener("click", function () {
 });
 
 function all (arr) {
-  arr.forEach((item) => DOMSelectors.card.insertAdjacentHTML(
+  arr.forEach((item) => DOMSelectors.display.insertAdjacentHTML(
       "beforeend",
       `<div class="card"> 
     <h2 class="title">${item.name}</h2> 
