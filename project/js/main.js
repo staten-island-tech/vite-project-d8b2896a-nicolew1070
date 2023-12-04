@@ -28,7 +28,7 @@ all (desserts);
 let buttons = document.querySelectorALL('.btn')
  
 buttons.forEach((btn) => btn.addEventListener("click", function () {
-    let type = btn.textContent.toLowerCase()
+    let type = btn.textContent()
     let newArr = desserts.filter((desserts) => desserts.class.includes(type))
     DOMSelectors.card.innerHTML = "";
     all(newArr);
