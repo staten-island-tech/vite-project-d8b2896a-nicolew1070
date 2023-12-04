@@ -25,15 +25,14 @@ function all (arr) {
 }
 all (desserts);
 
-function filters () {
- DOMSelectors.buttons.forEach((btn) => btn.addEventListener("click", function () {
-    let category = btn.textContent.toLowerCase()
-    let newArr = desserts.filter((items) => items.type.includes(category))
-    DOMSelectors.card.innerHTML = ""
+let buttons = document.querySelectorALL('.btn')
+ 
+buttons.forEach((btn) => btn.addEventListener("click", function () {
+    let type = btn.textContent.toLowerCase()
+    let newArr = desserts.filter((desserts) => desserts.class.includes(type))
+    DOMSelectors.card.innerHTML = "";
     all(newArr);
   }))
-}
-filters();
 
  /* document.querySelector("#change-theme").addEventListener("click", function () {
   if (document.body.classList.contains("freshy")) {
