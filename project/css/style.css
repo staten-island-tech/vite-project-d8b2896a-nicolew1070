@@ -51,7 +51,7 @@ body {
     
 }
 
-.display-card {
+.card {
     width: 22%;
     background-color: var(--secondary);
     display: flex;
@@ -102,7 +102,7 @@ h3 {
     font-size: 25px;
 }
 
-.btn {
+.btn, .btn2 {
     background-color: var(--tertiary);
     border-radius: 3px;
     padding: 0.5rem;

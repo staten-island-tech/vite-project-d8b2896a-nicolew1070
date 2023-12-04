@@ -13,7 +13,7 @@ document.querySelector("#change-theme").addEventListener("click", function () {
 });
 
 function all (arr) {
-  arr.forEach((item) => DOMSelectors.display.insertAdjacentHTML(
+  arr.forEach((item) => DOMSelectors.cards.insertAdjacentHTML(
       "beforeend",
       `<div class="card"> 
     <h2 class="title">${item.name}</h2> 
@@ -22,17 +22,23 @@ function all (arr) {
     <h3>${item.calories}</h3>`
     )
   );
-}
-all (desserts);
+  }
+all(desserts)
 
-let buttons = document.querySelectorALL('.btn')
- 
+function remove () {
+  const clear = document.querySelectorAll(".card");
+  clear.forEach((cleared)=>cleared.remove());
+}
+
+let buttons = document.querySelectorAll(".btn")
 buttons.forEach((btn) => btn.addEventListener("click", function () {
     let type = btn.textContent
     let newArr = desserts.filter((desserts) => desserts.class.includes(type))
-    DOMSelectors.card.innerHTML = "";
+    remove();
     all(newArr);
   }))
+
+let buton = document.querySelectorAll(".btn2")
 
  /* document.querySelector("#change-theme").addEventListener("click", function () {
   if (document.body.classList.contains("freshy")) {
