@@ -28,7 +28,7 @@ DOMSelectors.all.addEventListener("click", function () {
   all(desserts);
 })
 
-document.querySelector("#change-theme").addEventListener("click", function () {
+DOMSelectors.change.addEventListener("click", function () {
   if (document.body.classList.contains("freshy")) {
     document.body.classList.add("minty");
     document.body.classList.remove("freshy");
@@ -37,6 +37,7 @@ document.querySelector("#change-theme").addEventListener("click", function () {
     document.body.classList.remove("minty");
   }
 });
+
 
  /* document.querySelector("#change-theme").addEventListener("click", function () {
   if (document.body.classList.contains("freshy")) {

@@ -5,6 +5,7 @@ const DOMSelectors = {
     drink: document.querySelector("#drinks"),
     all: document.querySelector("#menu"),
     cards: document.querySelector(".display"),
+    change: document.querySelector("#change-theme"),
 };
 
 export {DOMSelectors};
