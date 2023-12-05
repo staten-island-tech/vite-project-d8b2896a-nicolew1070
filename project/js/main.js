@@ -2,16 +2,6 @@ import "../css/style.css";
 import { DOMSelectors } from "./dom.js";
 import { desserts } from "./desserts.js";
 
-document.querySelector("#change-theme").addEventListener("click", function () {
-  if (document.body.classList.contains("freshy")) {
-    document.body.classList.add("minty");
-    document.body.classList.remove("freshy");
-  } else {
-    document.body.classList.add("freshy");
-    document.body.classList.remove("minty");
-  }
-});
-
 function all (arr) {
   arr.forEach((item) => DOMSelectors.cards.insertAdjacentHTML(
       "beforeend",
@@ -37,6 +27,16 @@ DOMSelectors.all.addEventListener("click", function () {
   DOMSelectors.cards.innerHTML = ""
   all(desserts);
 })
+
+document.querySelector("#change-theme").addEventListener("click", function () {
+  if (document.body.classList.contains("freshy")) {
+    document.body.classList.add("minty");
+    document.body.classList.remove("freshy");
+  } else {
+    document.body.classList.add("freshy");
+    document.body.classList.remove("minty");
+  }
+});
 
  /* document.querySelector("#change-theme").addEventListener("click", function () {
   if (document.body.classList.contains("freshy")) {
