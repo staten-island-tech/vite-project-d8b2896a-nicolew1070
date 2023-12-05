@@ -25,20 +25,18 @@ function all (arr) {
   }
 all(desserts)
 
-function remove () {
-  const clear = document.querySelectorAll(".card");
-  clear.forEach((cleared)=>cleared.remove());
-}
-
 let buttons = document.querySelectorAll(".btn")
 buttons.forEach((btn) => btn.addEventListener("click", function () {
     let type = btn.textContent
     let newArr = desserts.filter((desserts) => desserts.class.includes(type))
-    remove();
+    DOMSelectors.cards.innerHTML = ""
     all(newArr);
   }))
 
-let buton = document.querySelectorAll(".btn2")
+DOMSelectors.all.addEventListener("click", function () {
+  DOMSelectors.cards.innerHTML = ""
+  all(desserts);
+})
 
  /* document.querySelector("#change-theme").addEventListener("click", function () {
   if (document.body.classList.contains("freshy")) {

@@ -102,7 +102,7 @@ h3 {
     font-size: 25px;
 }
 
-.btn, .btn2 {
+.btn, .btns {
     background-color: var(--tertiary);
     border-radius: 3px;
     padding: 0.5rem;
